@@ -1,6 +1,9 @@
 % Mask - binary image mask
 % dFF0 - relative fluorescence data
+load('Demos/dFF0-wave01.mat')
 dFF0=double(dFF0)*factor;%convert int16 to double
+
+%%
 thr=0.5e-2;
 Rmin=20;
 PeaksArray=[];
