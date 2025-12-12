@@ -16,7 +16,7 @@ for i=1:Nframes
 Im = dFF0(:,:,i);
 meanImVal = mean(Im(:));
 Im=Mask.*Im+real(~Mask)*meanImVal;
-    A=waveletDecompose(Im,10,20);
+    A=waveletDecompose(Im,20,30);
 
     
     WHmax=imextendedmax(A,thr);
