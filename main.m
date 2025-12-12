@@ -1,8 +1,8 @@
-% Mask - binary image mask
-% dFF0 - relative fluorescence data
-load('Demos/dFF0-wave01.mat')
-dFF0=double(dFF0)*factor;%convert int16 to double
-
+% Mask — Binary image mask
+% dFF0 — Relative fluorescence data
+load('Demos/dFF0-wave01.mat')% Load dFF0 from demo data (mouse #12, first training session)
+dFF0=double(dFF0)*factor;% Convert int16 to double
+load('Demos/Mask.mat')% Load Mask from demo data (mouse #12, first training session)
 %%
 thr=0.5e-2;
 Rmin=20;
